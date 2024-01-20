@@ -1,0 +1,575 @@
+@media only screen and (min-width: 270px) and (max-width: 299px) {
+    body{
+        overflow-x: hidden;
+    }
+    #heading1{
+        height: 30px;
+        width: 250px;
+        font-size: 28px;
+        font-weight: 700;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #003aa5;
+        margin-top: 10px;
+    }
+    #input1{
+        height: 30px;
+        width: 60%;
+        padding-left: 4px;
+        outline: none;
+        font-size: small;
+        border-bottom-left-radius: 7px;
+    }
+    #btn1{
+        height: 30px;
+        width: 80px;
+        position: relative;
+        left: -7px;
+        top: 1.2px;
+        border: none;
+        background-color: #22a7ff;
+        color: #fff;
+        font-weight: 600;
+        border-top-right-radius: 7px;
+    }
+    #searchbarcomb{
+        width: 100%;
+    }
+    
+    #loading {
+        width: 2rem;
+        height: 2rem;
+        border: 5px solid #f3f3f3;
+        border-top: 6px solid #22a7ff;
+        border-radius: 100%;
+        margin: 0px 100px;
+        visibility: hidden;
+        animation: spin 1s infinite linear;
+    }
+    #loading.display {
+        visibility: visible;
+    }
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    #avtar{
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+    }
+    #gitcomb{
+        margin: 5px 0px;
+    }
+    #loc-svg{
+        height: 15px;
+        width: 15px;
+        margin: 4px 0px;
+    }
+    #link-svg{
+        height: 20px;
+        width: 20px;
+        margin: 3.5px 0px;
+    }
+    
+    .repocard{
+        display: flex;
+        flex-direction: column;
+        column-gap: 2px;
+        border: 2px solid #000;
+        margin: 20px 10px;
+        padding: 10px 20px;
+        width: 80%;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .repos{
+        font-size: 24px;
+    }
+    .repolang{
+        height: 20px;
+        width: 65px;
+        background-color: #22a7ff;
+        color: #fff;
+        font-size: small;
+        font-weight: 600;
+        border-radius: 3px;
+        padding-left: 3px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    body{
+        overflow-x: hidden;
+    }
+    #heading1{
+        height: 30px;
+        width: 250px;
+        font-size: 28px;
+        font-weight: 700;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #003aa5;
+        margin-top: 10px;
+    }
+    #input1{
+        height: 30px;
+        width: 70%;
+        padding-left: 4px;
+        outline: none;
+        font-size: small;
+        border-bottom-left-radius: 7px;
+    }
+    #btn1{
+        height: 30px;
+        width: 80px;
+        position: relative;
+        left: -7px;
+        top: 1.2px;
+        border: none;
+        background-color: #22a7ff;
+        color: #fff;
+        font-weight: 600;
+        border-top-right-radius: 7px;
+    }
+    #searchbarcomb{
+        width: 100%;
+    }
+    
+    #loading {
+        width: 2rem;
+        height: 2rem;
+        border: 5px solid #f3f3f3;
+        border-top: 6px solid #22a7ff;
+        border-radius: 100%;
+        margin: 0px 100px;
+        visibility: hidden;
+        animation: spin 1s infinite linear;
+    }
+    #loading.display {
+        visibility: visible;
+    }
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    #avtar{
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+    }
+    #gitcomb{
+        margin: 5px 0px;
+    }
+    #loc-svg{
+        height: 15px;
+        width: 15px;
+        margin: 4px 0px;
+    }
+    #link-svg{
+        height: 20px;
+        width: 20px;
+        margin: 3.5px 0px;
+    }
+    
+    .repocard{
+        display: flex;
+        flex-direction: column;
+        column-gap: 2px;
+        border: 2px solid #000;
+        margin: 20px 10px;
+        padding: 10px 20px;
+        width: 80%;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .repos{
+        font-size: 24px;
+    }
+    .repolang{
+        height: 20px;
+        width: 65px;
+        background-color: #22a7ff;
+        color: #fff;
+        font-size: small;
+        font-weight: 600;
+        border-radius: 3px;
+        padding-left: 3px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body{
+        overflow-x: hidden;
+    }
+    #heading1{
+        height: 30px;
+        width: 250px;
+        font-size: 28px;
+        font-weight: 700;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #003aa5;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #input1{
+        height: 30px;
+        width: 85%;
+        padding-left: 4px;
+        outline: none;
+        font-size: small;
+        border-bottom-left-radius: 7px;
+    }
+    #btn1{
+        height: 30px;
+        width: 80px;
+        position: relative;
+        left: -7px;
+        top: 1.2px;
+        border: none;
+        background-color: #22a7ff;
+        color: #fff;
+        font-weight: 600;
+        border-top-right-radius: 7px;
+    }
+    
+    #loading {
+        width: 4rem;
+        height: 4rem;
+        border: 5px solid #f3f3f3;
+        border-top: 6px solid #22a7ff;
+        border-radius: 100%;
+        margin: auto;
+        visibility: hidden;
+        animation: spin 1s infinite linear;
+    }
+    #loading.display {
+        visibility: visible;
+    }
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    #avtar{
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #gitcomb{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .userdetails{
+        height: 120px;
+        width: 300px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    #loccomb{
+        justify-content: center;
+    }
+    #twittercomb{
+        justify-content: center;
+    }
+    
+    #loc-svg{
+        height: 15px;
+        width: 15px;
+        margin: 4px 0px;
+    }
+    #link-svg{
+        height: 20px;
+        width: 20px;
+        margin: 3.5px 0px;
+    }
+    
+    .repocard{
+        display: flex;
+        flex-direction: column;
+        column-gap: 2px;
+        border: 2px solid #000;
+        margin: 20px 10px;
+        padding: 10px 20px;
+        width: 95%;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .repos{
+        font-size: 24px;
+    }
+    .repolang{
+        height: 20px;
+        width: 65px;
+        background-color: #22a7ff;
+        color: #fff;
+        font-size: small;
+        font-weight: 600;
+        border-radius: 3px;
+        padding-left: 3px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    body{
+        overflow-x: hidden;
+    }
+    #heading1{
+        height: 30px;
+        width: 250px;
+        font-size: 28px;
+        font-weight: 700;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #003aa5;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #input1{
+        height: 30px;
+        width: 90%;
+        padding-left: 4px;
+        outline: none;
+        font-size: small;
+        border-bottom-left-radius: 7px;
+    }
+    #btn1{
+        height: 30px;
+        width: 80px;
+        position: relative;
+        left: -7px;
+        top: 1.2px;
+        border: none;
+        background-color: #22a7ff;
+        color: #fff;
+        font-weight: 600;
+        border-top-right-radius: 7px;
+    }
+    
+    #loading {
+        width: 4rem;
+        height: 4rem;
+        border: 5px solid #f3f3f3;
+        border-top: 6px solid #22a7ff;
+        border-radius: 100%;
+        margin: auto;
+        visibility: hidden;
+        animation: spin 1s infinite linear;
+    }
+    #loading.display {
+        visibility: visible;
+    }
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    #avtar{
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #gitcomb{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .userdetails{
+        height: 120px;
+        width: 300px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    #loccomb{
+        justify-content: center;
+    }
+    #twittercomb{
+        justify-content: center;
+    }
+    
+    #loc-svg{
+        height: 15px;
+        width: 15px;
+        margin: 4px 0px;
+    }
+    #link-svg{
+        height: 20px;
+        width: 20px;
+        margin: 3.5px 0px;
+    }
+    
+    .repocard{
+        display: flex;
+        flex-direction: column;
+        column-gap: 2px;
+        border: 2px solid #000;
+        margin: 20px 10px;
+        padding: 10px 20px;
+        width: 95%;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .repos{
+        font-size: 24px;
+    }
+    .repolang{
+        height: 20px;
+        width: 65px;
+        background-color: #22a7ff;
+        color: #fff;
+        font-size: small;
+        font-weight: 600;
+        border-radius: 3px;
+        padding-left: 3px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body{
+        overflow-x: hidden;
+    }
+    .navlocal{
+        display: flex;
+        justify-content: center;
+        gap: 30%;
+        margin-top: 10px;
+    }
+    #searchbarcomb{
+        margin-top: 10px;
+    }
+    .user{
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+    }
+    .userdetails{
+        height: 120px;
+        width: 400px;
+        margin: 20px 10px;
+        padding: 20px 0px;
+    }
+    #gitcomb{
+        margin-top: 10px;
+    }
+    #heading1{
+        height: 30px;
+        width: 250px;
+        font-size: 28px;
+        font-weight: 700;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #003aa5;
+        margin-top: 10px;
+    }
+    #input1{
+        height: 30px;
+        width: 250px;
+        padding-left: 4px;
+        outline: none;
+        font-size: small;
+        border-bottom-left-radius: 7px;
+    }
+    #btn1{
+        height: 30px;
+        width: 80px;
+        position: relative;
+        left: -7px;
+        top: 1.2px;
+        border: none;
+        background-color: #22a7ff;
+        color: #fff;
+        font-weight: 600;
+        border-top-right-radius: 7px;
+    }
+    
+    #loading {
+        width: 4rem;
+        height: 4rem;
+        border: 5px solid #f3f3f3;
+        border-top: 6px solid #22a7ff;
+        border-radius: 100%;
+        margin: auto;
+        visibility: hidden;
+        animation: spin 1s infinite linear;
+    }
+    #loading.display {
+        visibility: visible;
+    }
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    #avtar{
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+    }
+    
+    #loc-svg{
+        height: 15px;
+        width: 15px;
+        margin: 4px 0px;
+    }
+    #link-svg{
+        height: 20px;
+        width: 20px;
+        margin: 3.5px 0px;
+    }
+    
+    .repocard{
+        display: flex;
+        flex-direction: column;
+        column-gap: 2px;
+        border: 2px solid #000;
+        margin: 20px 10px;
+        padding: 10px 20px;
+        width: 95%;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .repos{
+        font-size: 24px;
+    }
+    .repolang{
+        height: 20px;
+        width: 65px;
+        background-color: #22a7ff;
+        color: #fff;
+        font-size: small;
+        font-weight: 600;
+        border-radius: 3px;
+        padding-left: 3px;
+    }
+}
