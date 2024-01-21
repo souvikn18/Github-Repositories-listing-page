@@ -51,13 +51,14 @@ const fetchDetails = async (event) => {
         // assigning all datas from API
         avtar.src = allData.avatar_url
         if (allData.html_url) {
+            userDetails.style.opacity = 100
             linkIcon.src = "./assets/link.svg"
             gitURL.innerHTML = allData.html_url
             gitURL.href = allData.html_url
         }
         if (!allData.html_url) {
+            userDetails.style.opacity = 0
             alert("Invalid username :(")
-            userDetails.innerHTML = ''
             repoList.innerHTML = ''
         }
         fullName.innerText = allData.name
