@@ -572,4 +572,7 @@
         border-radius: 3px;
         padding-left: 3px;
     }
+    #repo-list{
+        margin-top: 80px;
+    }
 }
