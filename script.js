@@ -13,7 +13,7 @@ const twitterTag = document.getElementById("twitterTag")
 const repoList = document.getElementById("repo-list");
 const userDetails = document.querySelector(".user");
 
-// 
+// function for retrieving all languages
 const fetchLanguage = async (url) => {
     const response = await fetch(url);
     const langs = await response.json();
@@ -29,8 +29,6 @@ const fetchLanguage = async (url) => {
         spanElement.innerText = i
         htmlText += langContainer.innerHTML
     }
-
-    console.log("htmlText is", htmlText);
     return htmlText;
 };
 
@@ -132,14 +130,9 @@ const fetchDetails = async (event) => {
                 if (repo.language === null) {
                     repoLang.remove()
                 } else {
-                    // repoCard.appendChild(repoLang)
-                    console.log(
-                        "repo lang",
-                        await fetchLanguage(repo.languages_url)
-                        );
                         repoLang.innerHTML = await fetchLanguage(repo.languages_url);
                         repoCard.appendChild(repoLang);
-                }
+                    }
                 
             })
             
