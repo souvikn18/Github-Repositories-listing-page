@@ -13,6 +13,26 @@ const twitterTag = document.getElementById("twitterTag")
 const repoList = document.getElementById("repo-list");
 const userDetails = document.querySelector(".user");
 
+// 
+const fetchLanguage = async (url) => {
+    const response = await fetch(url);
+    const langs = await response.json();
+    console.log(langs);
+
+    let htmlText = "";
+
+    for (let i in langs) {
+        const langContainer = document.createElement("div")
+        const spanElement = document.createElement("span")
+        langContainer.appendChild(spanElement)
+        spanElement.classList.add("lang")
+        spanElement.innerText = i
+        htmlText += langContainer.innerHTML
+    }
+
+    console.log("htmlText is", htmlText);
+    return htmlText;
+};
 
 //creating loading spinner function for displaying
 const displayLoading = () => {
@@ -95,7 +115,7 @@ const fetchDetails = async (event) => {
             console.log(allRepos);
 
             // displaying all repos dynamically 
-            allRepos.map(repo => {
+            allRepos.map(async repo => {
                 let repoCard = document.createElement("div")
                 repoCard.classList.add("repocard")
                 let repoName = document.createElement("h3")
@@ -112,7 +132,13 @@ const fetchDetails = async (event) => {
                 if (repo.language === null) {
                     repoLang.remove()
                 } else {
-                    repoCard.appendChild(repoLang)
+                    // repoCard.appendChild(repoLang)
+                    console.log(
+                        "repo lang",
+                        await fetchLanguage(repo.languages_url)
+                        );
+                        repoLang.innerHTML = await fetchLanguage(repo.languages_url);
+                        repoCard.appendChild(repoLang);
                 }
                 
             })
